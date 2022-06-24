@@ -1,0 +1,15 @@
+## required
+shapely, numpy, pandas, astropy, matplotlib
+
+## command
+python main.py --file stars.csv --ra_cen 50 --dec_cen 50
+
+## input args
+file: filename for stellar catalog w/ (ra, dec) in degree
+output: filename for output
+ra_cen: central position for telescope in ra direction (degree)
+dec_cen: central position for telescope in dec direction  (degree)
+
+
+## output
+output.csv: output csv with flag. Visibility = 1 means stars are in FOV. Visibility = 0 means stars are out of FOV
